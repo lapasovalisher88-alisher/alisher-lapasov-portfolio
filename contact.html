@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Aloqa — Alisher Lapasov</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <nav class="container nav">
+      <a class="brand" href="index.html">Alisher <span>Lapasov</span></a>
+      <button class="nav-toggle" aria-label="Menyu">
+        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      </button>
+      <ul class="nav-links">
+        <li><a href="index.html">Bosh sahifa</a></li>
+        <li><a href="about.html">Men haqimda</a></li>
+        <li><a href="services.html">Xizmatlar</a></li>
+        <li><a href="contact.html" class="active">Aloqa</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <div class="container contact-grid">
+        <div>
+          <h1 class="section-title" style="text-align:left;">Bog'lanish</h1>
+          <p style="color:var(--text-muted);">
+            Savollaringiz yoki hamkorlik taklifingiz bo'lsa, quyidagi ma'lumotlar orqali
+            yoki forma yordamida murojaat qiling.
+          </p>
+          <ul class="contact-info-list">
+            <li>
+              <span class="contact-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 6-10 7L2 6"/></svg>
+              </span>
+              <div>
+                <strong>Email</strong><br />
+                <a href="mailto:lapasovalisher88@gmail.com">lapasovalisher88@gmail.com</a>
+              </div>
+            </li>
+            <li>
+              <span class="contact-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+              </span>
+              <div>
+                <strong>Telefon</strong><br />
+                <a href="tel:+998770442700">+998 77 044 27 00</a>
+              </div>
+            </li>
+            <li>
+              <span class="contact-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              </span>
+              <div>
+                <strong>Manzil</strong><br />
+                Samarqand viloyati, Bulung'ur tumani
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <div>
+          <form id="contact-form">
+            <div>
+              <label for="name">Ismingiz</label>
+              <input type="text" id="name" name="name" placeholder="Ismingizni kiriting" required />
+            </div>
+            <div>
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" placeholder="email@misol.com" required />
+            </div>
+            <div>
+              <label for="message">Xabar</label>
+              <textarea id="message" name="message" rows="5" placeholder="Xabaringizni yozing" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Yuborish</button>
+            <p class="form-status" id="form-status"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; 2026 Alisher Lapasov — Registon Study. Barcha huquqlar himoyalangan.</p>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
