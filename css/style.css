@@ -3,11 +3,22 @@
   --bg-soft: #f6f7f9;
   --text: #1c1f26;
   --text-muted: #5b6270;
-  --accent: #1b6ca8;
-  --accent-soft: #e8f1f8;
+  --accent: #2563eb;
+  --accent-soft: #e8f0fe;
   --border: #e4e6ea;
   --radius: 12px;
   --max-width: 1080px;
+
+  --c-blue: #2563eb;
+  --c-blue-soft: #e8f0fe;
+  --c-purple: #7c3aed;
+  --c-purple-soft: #f1e9fe;
+  --c-green: #059669;
+  --c-green-soft: #e3f8ef;
+  --c-amber: #d97706;
+  --c-amber-soft: #fef3e2;
+  --c-pink: #db2777;
+  --c-pink-soft: #fde8f1;
 }
 
 * {
@@ -21,9 +32,39 @@ html, body {
 
 body {
   font-family: "Segoe UI", -apple-system, BlinkMacSystemFont, Roboto, Arial, sans-serif;
-  background: var(--bg-soft);
+  background-color: var(--bg-soft);
+  background-image:
+    radial-gradient(640px circle at 8% -8%, rgba(37, 99, 235, 0.09), transparent 60%),
+    radial-gradient(640px circle at 92% 8%, rgba(124, 58, 237, 0.08), transparent 60%),
+    radial-gradient(560px circle at 50% 110%, rgba(219, 39, 119, 0.06), transparent 60%);
+  background-attachment: fixed;
   color: var(--text);
   line-height: 1.6;
+}
+
+.icon-blue {
+  background: var(--c-blue-soft) !important;
+  color: var(--c-blue) !important;
+}
+
+.icon-purple {
+  background: var(--c-purple-soft) !important;
+  color: var(--c-purple) !important;
+}
+
+.icon-green {
+  background: var(--c-green-soft) !important;
+  color: var(--c-green) !important;
+}
+
+.icon-amber {
+  background: var(--c-amber-soft) !important;
+  color: var(--c-amber) !important;
+}
+
+.icon-pink {
+  background: var(--c-pink-soft) !important;
+  color: var(--c-pink) !important;
 }
 
 a {
@@ -159,7 +200,7 @@ img {
 }
 
 .btn-primary {
-  background: var(--accent);
+  background: linear-gradient(135deg, var(--c-blue), var(--c-purple));
   color: #fff;
 }
 
@@ -207,8 +248,8 @@ img {
   width: 32px;
   height: 32px;
   border-radius: 50%;
-  background: var(--accent-soft);
-  color: var(--accent);
+  background: var(--c-green-soft);
+  color: var(--c-green);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -225,6 +266,10 @@ img {
   border-radius: 16px;
   overflow: hidden;
   background: var(--accent-soft);
+  border: 3px solid transparent;
+  background-image: linear-gradient(var(--bg), var(--bg)), linear-gradient(135deg, var(--c-blue), var(--c-purple), var(--c-pink));
+  background-origin: border-box;
+  background-clip: padding-box, border-box;
 }
 
 .profile-photo img {
@@ -241,8 +286,8 @@ img {
 
 .role-pill {
   display: inline-block;
-  background: var(--accent-soft);
-  color: var(--accent);
+  background: linear-gradient(135deg, var(--c-blue), var(--c-purple));
+  color: #fff;
   font-weight: 600;
   font-size: 0.78rem;
   padding: 5px 12px;
@@ -549,6 +594,10 @@ section {
   font-weight: 700;
   margin: 0 auto;
   overflow: hidden;
+  border: 4px solid transparent;
+  background-image: linear-gradient(var(--bg), var(--bg)), linear-gradient(135deg, var(--c-blue), var(--c-purple), var(--c-pink));
+  background-origin: border-box;
+  background-clip: padding-box, border-box;
 }
 
 .avatar-circle img {
